@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Profile</h1>
+  </header>
+
+  <main class="container profile-container">
+    <section class="profile-section">
+      <h2>Personal Information</h2>
+      <img src="profile-pic.png" alt="Profile Picture" class="profile-pic" />
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Email:</strong> john@example.com</p>
+      <button onclick="editProfile()">Edit Info</button>
+    </section>
+
+    <section class="profile-section">
+      <h2>Change Password</h2>
+      <input type="password" id="oldPassword" placeholder="Old Password" />
+      <input type="password" id="newPassword" placeholder="New Password" />
+      <button onclick="changePassword()">Change Password</button>
+    </section>
+
+    <section class="profile-section">
+      <h2>Payment History</h2>
+      <ul>
+        <li>Course: JavaScript for Beginners – $20 – Paid on 2025-07-01</li>
+        <li>Course: HTML & CSS Mastery – $15 – Paid on 2025-06-20</li>
+      </ul>
+    </section>
+
+    <section class="profile-section">
+      <h2>Certificates</h2>
+      <button onclick="downloadCertificate('JavaScript for Beginners')">Download JS Certificate</button>
+      <button onclick="downloadCertificate('HTML & CSS Mastery')">Download HTML/CSS Certificate</button>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to LearnX</h1>
+  </header>
+
+  <main class="container auth-container">
+    <div class="auth-tabs">
+      <button onclick="showForm('login')">Login</button>
+      <button onclick="showForm('signup')">Signup</button>
+      <button onclick="showForm('reset')">Reset Password</button>
+    </div>
+
+    <div id="loginForm" class="auth-form">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <div id="signupForm" class="auth-form hidden">
+      <h2>Signup</h2>
+      <input type="text" id="signupName" placeholder="Full Name" />
+      <input type="email" id="signupEmail" placeholder="Email" />
+      <input type="password" id="signupPassword" placeholder="Password" />
+      <button onclick="signupUser()">Signup</button>
+    </div>
+
+    <div id="resetForm" class="auth-form hidden">
+      <h2>Reset Password</h2>
+      <input type="email" id="resetEmail" placeholder="Enter your email" />
+      <button onclick="resetPassword()">Send Reset Link</button>
+    </div>
+  </main>
+
+  <script src="shared.js"></script>
+</body>
+</html>
